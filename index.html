@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Roboto font from google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- Navigation Section -->
+        <nav>
+            <img src="css/sample_logo.png" alt="Logo.png">
+            <ul class="sidebar">
+                <li onclick="hideSidebar()" ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#our_package">Our Package</a></li>
+                <li><a href="#call_us">Call Us</a></li>
+            </ul>
+            <ul>
+                <li class="hideOnMobile"><a href="#home">Home</a></li>
+                <li class="hideOnMobile"><a href="#our_package">Our Package</a></li>
+                <li class="hideOnMobile"><a href="#call_us">Call Us</a></li>
+                <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+        <!-- End Navigation Section -->
+    </header>
+
+    <main>
+        <section id="Home">
+            <h1>Your Trusted Travel Agent's</h1>
+            <h4>your happiness is our hapiness</h4>
+        </section>
+        <section>
+            <article id="home">
+                <div class="overview">
+                    <div class="banner">
+                        <img alt="banner.png" name="slide">
+                    </div>
+
+                    <p>"Liburan jadi menyenangkan bersama Travel Agentku."</p>
+                    <h4>Florence Hughes</h4>
+                    <h6>Ibu Rumah Tangga, 28</h6>
+                    <p>use this space to provide users with more information about your offer. Consider it a follow-up to your headline and explain the benefits of your service or product</p>
+                </div>
+                <div class="testimony">
+                    <p>your first feature, written in the form of a benefit statement.</p>
+                    <p>your second feature, written in the form of a benefit statement.</p>
+                    <p>your third feature, written in the form of a benefit statement.</p>
+                </div>
+            </article>
+            <article>
+                <h4>Contact Us</h4>
+                <p>Sales akan menghubungi anda 1x24 Jam setelah data kami terima</p>
+                <div id="error"></div>
+                <form action="index.html" method="get" id="form">
+                    <label for="name">Your Name:</label>
+                    <input type="text" name="name" id="name" placeholder="First and last name">
+                    <label for="email">Your Email:</label>
+                    <input type="text" name="email" id="email" placeholder="example@email.com">
+                    <label for="interest">What are you interest in?</label>
+                    <select name="interest" id="interest">
+                        <option value="#">Option 1</option>
+                        <option value="#">Option 2</option>
+                        <option value="#">Option 3</option>
+                        <option value="#">Option 4</option>
+                    </select>
+                    <button type="submit">Send</button>
+                </form>
+            </article>
+        </section>
+    
+    <!-- End Top of Pages Content -->
+
+    <!-- Start Middle of Pages Content -->
+    
+        <section id="our_package">
+            <h4>Our Package</h4>
+        </section>
+        <section>
+            <article>
+                <h5>Bali</h5>
+                <p>Travel dan wisata di Bali. kunjungi cagar budaya dan kuliner yang menarik</p>
+            </article>
+            <article>
+                <h5>Japan</h5>
+                <p>Travel dan wisata di Jepang. kunjungi cagar budaya dan kuliner yang menarik</p>
+            </article>
+            <article>
+                <h5>Singapore</h5>
+                <p>This description supports and extends the bullet point above</p>
+            </article>
+            <article>
+                <h5>Bandung</h5>
+                <p>This description supports and extends the bullet point above</p>
+            </article>
+            <article>
+                <h5>Surabaya</h5>
+                <p>This description supports and extends the bullet point above</p>
+            </article>
+            <article>
+                <h5>Third Feature</h5>
+                <p>This description supports and extends the bullet point above</p>
+            </article>
+        </section>
+        <section id="call_us">
+            <h2>Your Closing Argument Headline</h2>
+            <div class="callAction">
+                <p>Suspendise egestas rhouncus urna in bibendum. Donec urna neque, euismod sed justo quis, convallis tincidunt risus. Phasellus fringilla odio vel erat fringilla,</p>
+                <button>CALL TO ACTION</button>
+            </div>
+        </section>
+    </main>
+    <!-- End Middle of Pages Content -->
+    <!-- Start Bottom of Pages Content -->
+    <footer>
+        <img src="css/sample_logo.png" alt="">
+        <div>
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <p>&#169 2019  Our Agent Travel</p>
+    </footer>
+    <!-- End Bottom of Pages Content -->
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>
